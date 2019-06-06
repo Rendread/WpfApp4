@@ -1,0 +1,44 @@
+﻿<Controls:MetroWindow x:Class="WpfApp10.Window3"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp10"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="checkedListBox1" HorizontalAlignment="Left" Height="181" Margin="10,81,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ListBox_SelectionChanged">
+            <ListBoxItem  Content="Литература"/>
+            <ListBoxItem  Content="Информатика"/>
+            <ListBoxItem Content="Философия"/>
+            <ListBoxItem Content="Программирование"/>
+            <ListBoxItem Content="Английский"/>
+        </ListBox>
+        <ListBox x:Name="checkedListBox2" HorizontalAlignment="Left" Height="181" Margin="203,81,0,0" VerticalAlignment="Top" Width="216" SelectionChanged="ListBox_SelectionChanged_1">
+            <ListBoxItem Content="1 курс"/>
+            <ListBoxItem Content="2 курс"/>
+            <ListBoxItem Content="3 курс"/>
+            <ListBoxItem Content="4 курс"/>
+            <ListBoxItem Content="5 курс"/>
+            <ListBoxItem Content="1 курс магистратуры"/>
+            <ListBoxItem Content="2 курс магистратуры"/>
+        </ListBox>
+        <ListBox   x:Name="checkedListBox3" HorizontalAlignment="Left" Height="181" Margin="468,81,0,0" VerticalAlignment="Top" Width="216" SelectedIndex="0"  >
+            
+            <CheckBox Content="КИ18-11Б"/>
+            <CheckBox Content="КИ18-12Б"/>
+            <CheckBox Content="КИ18-13Б"/>
+            <CheckBox Content="КИ18-14Б"/>
+            
+            
+
+        </ListBox>
+        <Label Content="Предмет" HorizontalAlignment="Left" Margin="42,26,0,0" VerticalAlignment="Top" Height="50" Width="109" FontSize="16"/>
+        <Label Content="Курс" HorizontalAlignment="Left" Margin="288,26,0,0" VerticalAlignment="Top" Height="50" Width="80" FontSize="16"/>
+        <Label Content="Группа" HorizontalAlignment="Left" Margin="532,26,0,0" VerticalAlignment="Top"  Height="50" Width="80" FontSize="16"/>
+        <Button x:Name="button" Content="Создать таблицу" HorizontalAlignment="Left" Margin="496,283,0,0" VerticalAlignment="Top" Width="220" Height="105" FontSize="16" Click="Button_Click"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="42,283,0,0" VerticalAlignment="Top" Width="403" Height="105"/>
+
+    </Grid>
+</Controls:MetroWindow>
